@@ -1,0 +1,11 @@
+.order_container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+.order-total_price {
+  font-size: 1.2rem;
+  color: #ff5733;
+}

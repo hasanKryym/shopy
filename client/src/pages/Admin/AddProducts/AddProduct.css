@@ -1,0 +1,25 @@
+.add_product-form .add_product-input {
+  margin-bottom: 0.5rem;
+}
+
+.add_product-form .buttons_container {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: end;
+}
+
+.add_product-input .list_container {
+  position: absolute;
+  list-style: none;
+  background: var(--light-gray);
+  width: 217px;
+}
+
+.add_product-input .list_container .list_item {
+  padding: 0.5rem 1rem;
+}
+
+.add_product-input .list_container .list_item:hover {
+  background: var(--silver-gray);
+  cursor: default;
+}

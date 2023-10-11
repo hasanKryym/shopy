@@ -1,0 +1,18 @@
+.user_details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_details .userDetails_input {
+  margin-bottom: 0.5rem;
+}
+
+.user_details .save_profile-button {
+  width: 220px;
+}
+
+@media screen and (max-width: 700px) {
+  .user_details {
+    align-items: center;
+  }
+}

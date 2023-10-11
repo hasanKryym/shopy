@@ -1,0 +1,29 @@
+.login_register-form_container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login_register-form_container .form-title {
+  margin-bottom: 0.5rem;
+}
+
+.login_register-form_container .form {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin-top: 10rem;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.login_register-form_container .form .input-container {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.login_register-form_container .signup-link {
+  margin-top: 1rem;
+}

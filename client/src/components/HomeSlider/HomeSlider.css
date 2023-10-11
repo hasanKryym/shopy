@@ -1,0 +1,23 @@
+.swiper_container {
+  width: 100vw;
+  background: #fff;
+  padding: 1rem;
+  max-width: 2000px;
+  max-height: 600px;
+}
+.swiper_container .swiper {
+  padding: 2rem;
+  max-height: inherit;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000 !important;
+}
+
+@media screen and (max-width: 520px) {
+  .swiper_container .swiper {
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+}

@@ -1,0 +1,8 @@
+.dashboard_header {
+  display: flex;
+  justify-content: end;
+}
+
+.dashboard_header .add_products {
+  font-size: 24px;
+}

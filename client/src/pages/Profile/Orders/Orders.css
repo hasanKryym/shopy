@@ -1,0 +1,12 @@
+.navigation-button {
+  border: none;
+  background: transparent;
+  padding: 6px 10px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.navigation-button:hover {
+  cursor: pointer;
+  background: var(--light-gray);
+}

@@ -1,0 +1,96 @@
+.contact_container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1600px;
+}
+
+.contact_container .card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_container .title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact_container .form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_container .group {
+  position: relative;
+}
+
+.contact_container .form .group label {
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.contact_container .form .group input,
+.contact_container .form .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.contact_container .form .group input:placeholder-shown + label,
+.contact_container .form .group textarea:placeholder-shown + label {
+  top: 10px;
+  background-color: transparent;
+}
+
+.contact_container .form .group input:focus,
+.contact_container .form .group textarea:focus {
+  border-color: #3366cc;
+}
+
+.contact_container .form .group input:focus + label,
+.contact_container .form .group textarea:focus + label {
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  color: #3366cc;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.contact_container .form .group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact_container .form button {
+  background-color: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact_container .form button:hover {
+  background-color: #27408b;
+}

@@ -1,0 +1,28 @@
+.profile_sidebar-list {
+  list-style: none;
+  width: 10%;
+  min-width: 150px;
+  height: fit-content;
+}
+
+.profile_sidebar-list li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.5rem;
+}
+
+.profile_sidebar-list li:hover {
+  background: var(--silver-gray);
+  cursor: pointer;
+}
+
+.isSelected {
+  background: var(--silver-gray);
+}
+
+@media screen and (max-width: 700px) {
+  .profile_sidebar-list {
+    text-align: center;
+  }
+}
