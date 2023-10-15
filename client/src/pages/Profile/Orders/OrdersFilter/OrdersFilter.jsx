@@ -2,11 +2,14 @@ import { useState } from "react";
 import "./OrdersFilter.css";
 import { ORDERS_FILTER } from "./filters";
 
-const OrdersFilter = ({ selectedFilter, setQueryObject }) => {
+const OrdersFilter = ({ selectedFilter, setQueryObject, setPages }) => {
   const handleFilterChange = (event) => {
+    setPages((prevState) => {
+      return { ...prevState, page: 1 };
+    });
     setQueryObject((prevState) => {
       if (event.target.value === ORDERS_FILTER.ALL) event.target.value = "";
-      return { ...prevState, orderStatus: event.target.value };
+      return { ...prevState, orderStatus: event.target.value, page: 1 };
     });
   };
 

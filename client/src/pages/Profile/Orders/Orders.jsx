@@ -61,6 +61,7 @@ const Orders = ({ page, PAGES }) => {
       fetchProducts(ordersData.orders);
     } else if (!ordersData.success && ordersData.msg === "no orders") {
       setOrders([]);
+      setPages({ ...pages, maxPages: 1 });
       setShowNotification(false);
     } else if (ordersData.msg === "Invalid ObjectId provided") {
       setNotificationData({
@@ -293,6 +294,7 @@ const Orders = ({ page, PAGES }) => {
       )}
       <div className="orders_container">
         <OrdersFilter
+          setPages={setPages}
           selectedFilter={queryObject.orderStatus}
           setQueryObject={setQueryObject}
         />
